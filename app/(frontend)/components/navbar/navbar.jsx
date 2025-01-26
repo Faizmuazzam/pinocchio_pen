@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <div className='block fixed top-0 left-0 right-0 z-10 bg-[#22252d]'>
-      <div className='flex justify-between items-center min-h-[88px] px-10 py-5 gap-x-5'>
+      <div className='flex justify-between items-center min-h-[88px] px-10 py-5 gap-x-5 max-w-[1440px] m-auto'>
         <div className='max-w-full'>
           <IconCategory stroke={2} />
         </div>
