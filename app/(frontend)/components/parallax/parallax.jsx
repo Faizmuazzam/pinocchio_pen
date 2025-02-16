@@ -6,12 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from 'next/image'
 
-import sliderImage from '@/app/assets/images/slide-pic-1.webp';
-import planet01 from '@/app/assets/images/planet-3.webp';
-import planet02 from '@/app/assets/images/planet-5.webp';
-import planet03 from '@/app/assets/images/planet-6.webp';
-import planet04 from '@/app/assets/images/planet-4.webp';
-import plane01 from '@/app/assets/images/plane-1.webp';
+import sliderImage from '@/app/assets/images/used/pinnochio_bnr10.jpg';
+import planet01 from '@/app/assets/images/used/char_circle01.png';
+import planet02 from '@/app/assets/images/used/char_cat.png';
+import planet03 from '@/app/assets/images/used/char_duck01.png';
+import planet04 from '@/app/assets/images/used/char_circle01.png';
+import plane01 from '@/app/assets/images/used/char_pinno03.png';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -91,15 +91,15 @@ const ScrollTriggerLayout = () => {
                   }
                 >
                   <div className={`pt-[104px] w-[505px] max-w-full`}>
-                    <h1 className=" text-[80px] font-bold leading-[88px] ">
-                      Join the <br /> intergalactic <br /> battle.
+                    <h1 className=" text-[68px] font-bold leading-[76px] ">
+                      <span className="text-[#e45f35]">Welcome</span> <br />all dear <br /> Pinnochio's.
                     </h1>
-                    <h5 className="text-[32px] text-[#7f8596] mt-4 font-bold font-archivo">
-                      Play-to-Earn NFT Marketplace
+                    <h5 className="text-[22px] text-[#7f8596] mt-4 font-bold font-archivo">
+                      Come into our fantasy world, we will fly together
                     </h5>
                     <div className="mt-8">
                       <Link className="flex items-center justify-center w-max max-w-full min-h-14 px-[30px] bg-[#e45f35] rounded-xl font-bold hover:bg-[#2d73ff] transition-all" href={'/'}>
-                        Get a character
+                        Get a About Me
                       </Link>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const ScrollTriggerLayout = () => {
                   >
                     <div className="relative w-full h-full">
                       <div
-                        className="absolute bottom-1/4 -left-[180px] z-10"
+                        className="absolute max-w-[210px] bottom-1/4 -left-[100px] z-10"
                         style={{
                           transform: `translateX(-${(selfProgress * 2) * 100}%)`,
                           opacity: `${1 - (selfProgress * 2.5)}`
@@ -150,7 +150,7 @@ const ScrollTriggerLayout = () => {
                       >
                         <div className="absolute top-0 bottom-0 left-0 min-w-full w-max z-0 "
                           style={{
-                            transform: `translateX(-${(163 - (163 * (selfProgress * 2))) < 1 ? 0 : 163 - (163 * (selfProgress * 2))}px)`,
+                            transform: `translateX(-${(120 - (120 * (selfProgress * 2))) < 1 ? 0 : 120 - (120 * (selfProgress * 2))}px)`,
                           }}
                         >
                           <Image src={sliderImage} alt='' className="w-full h-full rounded-3xl" />
@@ -160,23 +160,23 @@ const ScrollTriggerLayout = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-5 bottom-5 right-0 left-0 min-h-[580px] max-h-[880px] z-0 max-w-[700px] mx-auto text-center pt-[88px]">
+                <div className="absolute top-10 bottom-5 right-10 left-10 min-h-[580px] max-h-[880px] z-0 max-w-[780px] px-14 mx-auto pt-[88px]">
                   <div
-                    className="block transition-opacity"
+                    className="block transition-opacity text-center"
                     style={{
                       transform: `translateY(${(progressScroll / 2 > 0) ? ((progressScroll - (widthSlider / 2)) * 0.15 < 0) ? -(((progressScroll - (widthSlider / 2)) * 0.15) * 0.35) : -((progressScroll - (widthSlider / 2)) * 0.1) : 0}%) scale(${(progressScroll - (widthSlider / 2) > 0) ? 1 - (selfProgress - 0.5) : 1})`,
                       opacity: `${activeIndex == 1 ? 1 : 0}`
                     }}
                   >
-                    <p className="text-[80px] font-archivo font-bold leading-tight -tracking-[0.03em]">
-                      Protect your planet. Earn 2x money.
+                    <p className="text-[72px] font-archivo font-bold leading-tight -tracking-[0.03em]">
+                      <span className="text-[#e45f35]">Help</span> Pinnochio <br /> not to lie anymore
                     </p>
-                    <p className="text-[32px] -tracking-[0.02em] font-archivo font-bold mt-3">
-                      Play-to-Earn NFT Marketplace
+                    <p className="text-[21px] -tracking-[0.02em] font-archivo font-bold mt-3">
+                      Because we will never lie to you all.
                     </p>
                     <div className="mt-8">
                       <Link className="flex items-center justify-center w-max max-w-full mx-auto min-h-14 px-[30px] bg-[#e45f35] rounded-xl font-bold hover:bg-[#2d73ff] transition-all" href={'/'}>
-                        See how it work
+                        See our Story
                       </Link>
                     </div>
                   </div>
@@ -200,7 +200,7 @@ const ScrollTriggerLayout = () => {
                     </div>
 
                     <div
-                      className="absolute top-[39%] left-[22%] max-w-[145px]"
+                      className="absolute top-[39%] left-[22%] max-w-[180px]"
                       style={{
                         transform: `translateX(0%)`,
                       }}
@@ -250,15 +250,15 @@ const ScrollTriggerLayout = () => {
                     }}
                   >
                     <div className="pt-10">
-                      <div className="w-full max-w-[500px] m-auto">
+                      <div className="w-full max-w-[375px] m-auto">
                         <Image src={plane01} alt='' className="w-full h-full" />
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute top-5 bottom-5 right-0 left-0 min-h-[580px] max-h-[880px] mx-auto text-center pt-[88px]">
-                  <div className="relative w-full h-full">
+                <div className="absolute top-5 right-0 left-0  mx-auto text-center pt-[88px]">
+                  <div className="relative w-full min-h-[660px] max-h-[880px]">
                     <div className="absolute bottom-12 left-0 block px-20">
                       <p className="text-white text-sm flex items-center gap-x-4">
                         <span className="font-bold">0{activeIndex + 1}</span>
